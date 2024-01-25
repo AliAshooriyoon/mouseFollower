@@ -5,22 +5,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background-color: #342e37;">
-    <h1
-      style="
-        color: #eee;
-        font-size: 80px;
-        text-align: center;
-        margin-top: 100px;
-      "
-    >
-      Hello world!
+  <body style="background-color: #342e37">
+    <h1 style="color: #eee; text-align: center; margin-top: 50px">
+      Die folge Maus
     </h1>
     <br />
     <br />
-    <br />
-    <br />
-    <br />
+    <div class="control">
+      <label for="selectColor" class="colorLabel">
+        Wählen Sie bitte ihre Lieblingsfarbe!
+      </label>
+      <input type="color" id="selectColor" />
+      <br />
+      <label for="fontRange" class="fontLabel">
+        Wechseln Sie den Text große!
+      </label>
+      <input
+        type="range"
+        placeholder="Ali"
+        id="fontRange"
+        min="20"
+        max="150"
+        value="30"
+      />
+    </div>
+    <br /><br />
     <div class="main">
       <button id="btn">Klick mich!</button>
     </div>
